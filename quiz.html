@@ -1,0 +1,511 @@
+<!-- Template code from day 9 project -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Travel Buddy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="quiz.css" type="text/css" />
+  </head>
+
+  <body>
+
+        <!-- START NAV -->
+    <nav class="navbar is-info">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#"> Travel Buddies 🏖️
+<!--             <img src="https://cdn.emk.dev/templates/bulma-logo-light.png" alt="Logo"> -->
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href = "index.html">
+              Home
+            </a>
+            <a class="navbar-item" href = "destinations.html">
+              Explore Destinations
+            </a>
+            <a class="navbar-item" href = "quiz.html">
+              Find a Travel Buddy
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!--     END NAV  -->
+    <!-- Header Code -->
+    <section
+      class="hero has-background-is-info-darker notification has-text-grey has-text-centered"
+      id="travel_header"
+    >
+      <div class="hero-body">
+        <p class="title">Find your ideal travel buddy</p>
+        <p class="subtitle">
+          Select your responses for each question to view available individuals with similar interests. Then, select a location to visit and browse options for potential travel partners.
+        </p>
+      </div>
+    </section>
+
+    <!-- Body Code -->
+    <div class="container has-text-centered">
+      <!-- Question 1 -->
+      <section class="section" id="question1">
+        <h1 class="title">What activity would you rather do on vacation?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="activity-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://media.tacdn.com/media/attractions-splice-spp-360x240/06/74/0e/89.jpg
+                    alt="ziplining"
+                  />
+                </div>
+                <div class="subtitle">Go Ziplining</div>
+              </figure>
+            </div> -->
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="activity-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://media.istockphoto.com/photos/young-woman-visitor-using-phone-in-museum-picture-id1207772719?k=20&m=1207772719&s=612x612&w=0&h=oKb1yengM4tuWMX6P4s853bOCboP9JXfQhwcInxQn38="
+                    alt="museum"
+                  />
+                </div>
+                <div class="subtitle">Visit a Museum</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="activity-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://www.scuba.com/blog/wp-content/uploads/2018/08/shutterstock_1041119029.jpg"
+                    alt="snorkeling"
+                  />
+                </div>
+                <div class="subtitle">Go Snorkeling</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure
+                id="activity-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://cdn.actionhub.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-25-at-11.25.23-AM-1024x700.png"
+                    alt="cliff diving"
+                  />
+                </div>
+                <div class="subtitle">Go Cliff Diving</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 2 -->
+      <section class="section hidden" id="question2">
+        <h1 class="title">What's your decision making style?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure
+                id="decision-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://tec-canada.com/wp-content/uploads/2019/05/Blog_OppositeArrow_shutterstock_384548260.jpg"
+                    alt="spontaneous"
+                  />
+                </div>
+                <div class="subtitle">Spontaneous</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="decision-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+<!--                    -->
+                  <img
+                    src="https://media.istockphoto.com/photos/tourist-planning-vacation-use-pen-pointing-on-the-map-and-other-on-picture-id1314688952?k=20&m=1314688952&s=612x612&w=0&h=dzy39e4qFdX_fvgRWykj36au9GPXgOg1gQrtJlK6tuY="
+                    alt="cautious"
+                  />
+                </div>
+                <div class="subtitle">Cautious</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="decision-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://miro.medium.com/max/1392/1*kJlqktpkJFfJjcgLpnSbZg.jpeg"
+                    alt="making decisions"
+                  />
+                </div>
+                <div class="subtitle">A blend of both</div>
+              </figure>
+            </div>
+            <!-- D -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="decision-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://i0.wp.com/www.manhattancbt.com/wp-content/uploads/2018/12/avoidance.jpg?w=848&ssl=1"
+                    alt="no decisions"
+                  />
+                </div>
+                <div class="subtitle">I avoid making decisions</div>
+              </figure>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 3 -->
+      <section class="section hidden" id="question3">
+        <h1 class="title">What are you doing on your day off?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure
+                id="hobby-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://www.jeffbullas.com/wp-content/uploads/2019/09/What-Is-The-Secret-To-Creating-Your-Best-Art-and-Work.jpg"
+                    alt="creating something"
+                  />
+                </div>
+                <div class="subtitle">Creating something</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="hobby-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://media.sciencephoto.com/image/f0202364/800wm/F0202364-Friends_hanging_out,_enjoying_picnic.jpg"
+                    alt="friends"
+                  />
+                </div>
+                <div class="subtitle">Hanging out with friends</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="hobby-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://decider.com/wp-content/uploads/2020/05/Netflix-Logo.jpg?quality=75&strip=all&w=1284&h=856&crop=1"
+                    alt="netflix"
+                  />
+                </div>
+                <div class="subtitle">Watching Netflix</div>
+              </figure>
+            </div>
+            <!-- D -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="hobby-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://scx1.b-cdn.net/csz/news/800a/2020/shoppingbag.jpg"
+                    alt="shopping"
+                  />
+                </div>
+                <div class="subtitle">Shopping</div>
+              </figure>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 4 -->
+      <section class="section hidden" id="question4">
+        <h1 class="title">Where would you prefer to live?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure
+                id="house-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://cdn.musserbuilder.com/wp-content/uploads/2019/02/Modern-Farmhouse-Glendale-Estates.jpg"
+                    alt="farm house"
+                  />
+                </div>
+                <div class="subtitle">Farm House</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="house-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://www.thespruce.com/thmb/20TbB5jFUsgf1LOQZGmV5XJl-0U=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/large-multi-condos-building-blocks-with-bicycles-lane-1174752803-9d506d8c43484c34b32f03afecf0d8c3.jpg"
+                    alt="city apartment"
+                  />
+                </div>
+                <div class="subtitle">City Apartment</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="house-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://torontolife.com/wp-content/uploads/2019/10/rockcliffe-featured-big-2240x0-c-default.jpg"
+                    alt="suburban house"
+                  />
+                </div>
+                <div class="subtitle">Suburban House</div>
+              </figure>
+            </div>
+            <!-- D -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="house-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://imageio.forbes.com/specials-images/imageserve/62b88b9c855dd9fc4a4b3754/Mansion-exterior/960x0.jpg?format=jpg&width=960"
+                    alt="mansion"
+                  />
+                </div>
+                <div class="subtitle">Mansion</div>
+              </figure>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 5 -->
+      <section class="section hidden" id="question5">
+        <h1 class="title">What best decribes your personality?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure
+                id="personality-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://img.freepik.com/free-photo/friendly-outgoing-excited-cute-millennial-female-coworker-newbie-greeting-team-waving-palm-hi-hello-gesture-energized-get-know-new-people-welcoming-greeting-friends-standing-yellow-background_1258-81936.jpg?w=1480&t=st=1659105078~exp=1659105678~hmac=9eca1c3bd6131e7778755aa7d93c927733c22d3b931e35e7be9305ecadcefa8b"
+                    alt="outgoing"
+                  />
+                </div>
+                <div class="subtitle">Outgoing</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="personality-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://write-an-essay-for-me.com/wp-content/uploads/2022/01/shy-blog.jpg"
+                    alt="Shy"
+                  />
+                </div>
+                <div class="subtitle">Shy</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="personality-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://scitechdaily.com/images/Introvert-or-Extrovert-Personality-1536x1024.jpg?ezimgfmt=ng:webp/ngcb1"
+                    alt="Ambivert"
+                  />
+                </div>
+                <div class="subtitle">Ambivert</div>
+              </figure>
+            </div>
+            <!-- D -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="fruit-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Fn-c5lOWe8xWpwkQ8Kw3C3RF01fc-KXOug&usqp=CAU"
+                    alt="mango"
+                  />
+                </div>
+                <div class="subtitle">Mango</div>
+              </figure>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 6 -->
+      <section class="section hidden" id="question6">
+        <h1 class="title">When do you have the most energy?</h1>
+        <!-- Answer Choices -->
+        <div class="container">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure
+                id="time-0"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Morning%2C_just_after_sunrise%2C_Namibia.jpg/560px-Morning%2C_just_after_sunrise%2C_Namibia.jpg"
+                    alt="morning"
+                  />
+                </div>
+                <div class="subtitle">Morning</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure
+                id="time-1"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg/580px-In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg"
+                    alt="night
+                  />
+                </div>
+                <div class="subtitle">Night</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure
+                id="time-2"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://i.pinimg.com/564x/e1/3a/4d/e13a4d737425141353603f7a3edb73cd.jpg"
+                    alt="Midday"
+                  />
+                </div>
+                <div class="subtitle">Midday</div>
+              </figure>
+            </div>
+            <!-- D -->
+<!--             <div class="column has-text-centered">
+              <figure
+                id="activity-3"
+                class="card-image card notification has-background-light is-inline-block"
+              >
+                <div class="container">
+                  <img
+                    src="https://s3.amazonaws.com/zenplannerwordpress-stack0/wp-content/uploads/sites/598/2022/01/26072906/female-rhapsody-fitness-member-focuses-wod.jpg"
+                    alt="gym"
+                  />
+                </div>
+                <div class="subtitle">Gym</div>
+              </figure>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+
+      
+      <!--
+      
+      
+      <!-- Final Answer 1 (-, -) -->
+      <section class="section">
+        <div class="container" id="quiz_completed">
+        
+        </div>
+      </section>
+    </div>
+  
+
+  
+    <!-- Footer Code -->
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+       ☀️ ⛱️ 😎 🌴 🌊
+    </p>
+    Travel Buddies Inc.
+  </div>
+</footer>
+
+    <script src="quiz.js" type="text/javascript" defer></script>
+    <script src="users.js" type="text/javascript" defer></script>
+  </body>
+</html>

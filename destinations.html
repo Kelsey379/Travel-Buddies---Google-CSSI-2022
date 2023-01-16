@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destination Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- START NAV -->
+    <nav class="navbar is-info">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#"> Travel Buddies 🏖️
+<!--             <img src="https://cdn.emk.dev/templates/bulma-logo-light.png" alt="Logo"> -->
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href = "index.html">
+              Home
+            </a>
+            <a class="navbar-item" href = "destinations.html">
+              Select a Destination
+            </a>
+            <a class="navbar-item" href = "quiz.html">
+              Find a Travel Buddy
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!--     END NAV  -->
+
+    <div class="container">
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            <h1 class="title" style="color: deepskyblue;">Select a Destination</h1><br>
+          </div>
+        </div>
+        <div id="app" class="row columns is-multiline">
+          
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="https://cdn.mos.cms.futurecdn.net/7YrobQvFFzw8aWsAUtoYXB-970-80.jpg.webp" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+<!--                   <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="" alt="Image">
+                    </figure>
+                  </div> -->
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">Great Pyramids</p>
+<!--                     <p>
+                      <span class="title is-6">
+                        <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p> -->
+                    <p class="subtitle is-6">Giza, Egypt</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <a class="button" href="googlemaps1.html">Travel Here</a>
+<!--                   <button type="button" onclick="window.location.href ='googlemaps1.html'">here</button>  -->
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+<!--- -->
+                    <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="https://media.istockphoto.com/photos/bora-bora-island-french-polynesia-picture-id930322352?k=20&m=930322352&s=612x612&w=0&h=cEr5JOxA6oOSKAmu8rtPdI_zIX25a87iDCBP0tar-qs=" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+<!--                   <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img :src="card.avatar" alt="Image">
+                    </figure>
+                  </div> -->
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">Bora Bora</p>
+<!--                     <p>
+                      <span class="title is-6">
+                        <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p> -->
+                    <p class="subtitle is-6">Bora-Bora, French Polynesia</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <a class="button" href="googlemaps2.html">Travel Here</a>
+<!--                   <button type="button" onclick="window.location.href ='googlemaps2.html'">here</button>  -->
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--- -->
+                    <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+<!--                   <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img :src="card.avatar" alt="Image">
+                    </figure>
+                  </div> -->
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">New York City</p>
+<!--                     <p>
+                      <span class="title is-6">
+                        <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p> -->
+                    <p class="subtitle is-6">New York, USA</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <a class="button" href="googlemaps3.html">Travel Here</a>
+<!--                   <button type="button" onclick="window.location.href ='googlemaps3.html'">here</button>  -->
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+<!--                               <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">New York</p>
+                    <p class="subtitle is-6">New York, USA</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                                   <br><br><br><button type="button" onclick="window.location.href ='googlemaps3.html'">here</button> 
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div> -->
+              
+          </div>   
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- Footer Code -->
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+       ☀️ ⛱️ 😎 🌴 🌊
+    </p>
+    Travel Buddies Inc.
+  </div>
+</footer>
+
+    <script src="../js/cardsData.js"></script>
+
+    <!-- Using Vue to populate cards to reduce redundant code -->
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          cardData: cardsData
+        }
+      })
+
+    </script>
+  </body>
+
+</html>
+<!-- {{card.user.title}} -->

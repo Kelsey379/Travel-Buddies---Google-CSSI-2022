@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHk_8VXc1lJ4j6Tn9grFOJ8E2gaSrOOXQ&callback=initMap&v=weekly" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+       <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+        <!-- START NAV -->
+    <nav class="navbar is-info">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#"> Travel Buddies 🏖️
+<!--             <img src="https://cdn.emk.dev/templates/bulma-logo-light.png" alt="Logo"> -->
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href = "index.html">
+              Home
+            </a>
+            <a class="navbar-item" href = "destinations.html">
+              Explore Destinations
+            </a>
+            <a class="navbar-item" href = "quiz.html">
+              Find a Travel Buddy
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!--     END NAV  -->
+    <!-- probs make this a class later so maps can share it --> 
+      <div id="map"></div>
+
+       <section class="section is-small" id="user-matching-bg">
+        <div class="container has-text-centered">
+
+            <div class="tile is-ancestor" id="wow">
+            <!-- Matches come here -->
+          </div>
+        </div>
+        </section>
+
+   
+ 
+  
+  
+  <script src="boramap.js"></script>
+  <script src="quiz.js"></script>
+  </body>
+    
+</html>
